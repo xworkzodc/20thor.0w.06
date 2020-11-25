@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<bean class="com.xworkz.mountain.part.Festival" id="festival"
+		lazy-init="true">
+		<constructor-arg value="Dasara" />
+	</bean>
+
+
+	<bean id="season" class="com.xworkz.mountain.part.Season">
+		<constructor-arg value="34.6" type="float" />
+	</bean>
+
+	<bean id="summerSeason" class="com.xworkz.mountain.part.Season">
+		<constructor-arg value="Summer" />
+	</bean>
+	
+	<bean id="winterSeason" class="com.xworkz.mountain.part.Season">
+		<constructor-arg value="Winter" />
+	</bean>
+
+
+</beans>
